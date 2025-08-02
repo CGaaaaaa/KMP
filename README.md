@@ -1,6 +1,6 @@
 # KMP String Matching Algorithm
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/KMP/ci.yml)](https://github.com/YOUR_USERNAME/KMP/actions) [![codecov](https://codecov.io/gh/YOUR_USERNAME/KMP/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/KMP) [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE) [![MoonBit](https://img.shields.io/badge/MoonBit-0.1.0-orange)](https://www.moonbitlang.com/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE) [![MoonBit](https://img.shields.io/badge/MoonBit-0.1.0-orange)](https://www.moonbitlang.com/)
 
 KMP (Knuth-Morris-Pratt) 字符串匹配算法的 MoonBit 实现，具有完整的测试覆盖率和高性能。
 
@@ -18,7 +18,7 @@ KMP (Knuth-Morris-Pratt) 字符串匹配算法的 MoonBit 实现，具有完整�
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YOUR_USERNAME/KMP.git
+git clone https://github.com/CGaaaaaa/KMP.git
 cd KMP
 
 # 运行测试

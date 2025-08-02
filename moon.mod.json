@@ -2,6 +2,6 @@
   "name": "kmp_project",
   "is_main": true,
   "dependencies": {
-    "core": { "path": "./core" }  // 引入整个core库
+    "moonbitlang/core": "*"
   }
 }
