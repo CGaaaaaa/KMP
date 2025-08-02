@@ -1,7 +1,7 @@
 # KMP String Matching Algorithm
 
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) 
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](https://github.com/CGaaaaaa/KMP/actions) 
 
 [简体中文](README.md) | **English**
 
