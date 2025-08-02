@@ -18,6 +18,11 @@ jobs:
       with:
         version: "latest"
     
+    - name: Check MoonBit installation
+      run: |
+        moon version --all
+        which moon
+    
     - name: Install dependencies
       run: |
         moon install
@@ -31,16 +36,8 @@ jobs:
         moon coverage report -f cobertura -o coverage.xml
         moon coverage report -f html
     
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: false
-    
     - name: Upload coverage reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage-report
         path: |
