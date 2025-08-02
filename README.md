@@ -1,4 +1,6 @@
-# KMP String Matching Algorithm
+# KMP 字符串匹配算法
+
+**简体中文** | [English](README_EN.md)
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE) [![MoonBit](https://img.shields.io/badge/MoonBit-0.1.0-orange)](https://www.moonbitlang.com/)
 
@@ -78,6 +80,38 @@ moon coverage report -f cobertura # XML报告
 - `find_first(text: String, pattern: String) -> Int` - 查找首次匹配位置
 - `contains_pattern(text: String, pattern: String) -> Bool` - 检查是否包含模式
 - `build_failure_table(pattern: String) -> Array[Int]` - 构建KMP失效函数表
+
+### 算法复杂度
+
+- **时间复杂度**: O(n + m)，其中 n 是文本长度，m 是模式长度
+- **空间复杂度**: O(m)，用于存储失效函数表
+- **预处理**: O(m) 构建失效函数表
+- **搜索**: O(n) 扫描文本
+
+## 🔍 算法详解
+
+KMP算法使用失效函数（也称为部分匹配表）来避免在不匹配时进行不必要的字符比较，这使得它比朴素字符串匹配算法更高效。
+
+### 关键组件
+
+1. **失效函数构建**: 构建一个表，指示在不匹配时可以跳过多少个字符
+2. **模式匹配**: 使用失效函数高效地搜索文本
+3. **多重匹配支持**: 可以找到所有出现位置，而不仅仅是第一个
+
+## 🧪 测试
+
+项目包含全面的测试，涵盖：
+
+- ✅ 基本功能测试
+- ✅ 边界情况（空字符串、单字符）
+- ✅ 多重匹配场景
+- ✅ 性能验证
+- ✅ 错误处理
+
+运行测试：
+```bash
+moon test --enable-coverage
+```
 
 ## 🤝 贡献
 
