@@ -18,6 +18,10 @@ jobs:
       with:
         version: "latest"
     
+    - name: Install dependencies
+      run: |
+        moon install
+    
     - name: Run tests
       run: |
         moon test --enable-coverage
