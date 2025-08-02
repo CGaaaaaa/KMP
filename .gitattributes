@@ -3,7 +3,6 @@
 
 # Exclude coverage reports and generated files from language statistics
 _coverage/** linguist-generated=true
-coverage.xml linguist-generated=true
 target/** linguist-generated=true
 *.html linguist-detectable=false
 *.css linguist-detectable=false
