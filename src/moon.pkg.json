@@ -1,0 +1,6 @@
+{
+  "is_main": true,
+  "dependencies": {
+    "moonbitlang/core": "0.1.0"
+  }
+} 

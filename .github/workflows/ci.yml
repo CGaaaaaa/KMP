@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup MoonBit
+      uses: moonbitlang/setup-moonbit@v1
+      with:
+        version: "latest"
+    
+    - name: Run tests
+      run: |
+        moon test --enable-coverage
+    
+    - name: Generate coverage report
+      run: |
+        moon coverage report -f cobertura -o coverage.xml
+        moon coverage report -f html
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+    
+    - name: Upload coverage reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: |
+          coverage.xml
+          _coverage/
