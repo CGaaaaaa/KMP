@@ -1,0 +1,17 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# Exclude coverage reports and generated files from language statistics
+_coverage/** linguist-generated=true
+coverage.xml linguist-generated=true
+target/** linguist-generated=true
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+
+# Ensure MoonBit files are detected correctly
+*.mbt linguist-language=MoonBit
+
+# Mark documentation files
+*.md linguist-documentation=true
+LICENSE linguist-documentation=true
