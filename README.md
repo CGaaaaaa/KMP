@@ -1,8 +1,10 @@
 # KMP 字符串匹配算法
 
-**简体中文** | [English](README_EN.md)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE) [![MoonBit](https://img.shields.io/badge/MoonBit-0.1.0-orange)](https://www.moonbitlang.com/)
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) 
+
+**简体中文** | [English](README_EN.md)
 
 KMP (Knuth-Morris-Pratt) 字符串匹配算法的 MoonBit 实现，具有完整的测试覆盖率和高性能。
 

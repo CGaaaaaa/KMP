@@ -1,8 +1,9 @@
 # KMP String Matching Algorithm
 
-[简体中文](README.md) | **English**
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE) [![MoonBit](https://img.shields.io/badge/MoonBit-0.1.0-orange)](https://www.moonbitlang.com/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/CGaaaaaa/KMP/ci.yml)](https://github.com/CGaaaaaa/KMP/actions) [![Code Coverage](https://img.shields.io/badge/coverage-98.78%25-brightgreen)](./coverage.xml) 
+
+[简体中文](README.md) | **English**
 
 A high-performance implementation of the KMP (Knuth-Morris-Pratt) string matching algorithm in MoonBit with comprehensive test coverage.
 
