@@ -49,6 +49,6 @@ jobs:
       with:
         file: ./coverage.xml
         token: ${{ secrets.CODECOV_TOKEN }}
-        repository: CGaaaaaa/KMP
+        slug: CGaaaaaa/KMP
         fail_ci_if_error: true
         verbose: true
